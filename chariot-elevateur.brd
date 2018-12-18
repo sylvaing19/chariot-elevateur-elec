@@ -163,7 +163,7 @@
 <layer number="255" name="Accent" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
 <board>
-<fusionsync huburn="a.cGVyc29uYWw6dWUyYjVjZTIy" projecturn="a.cGVyc29uYWw6dWUyYjVjZTIyIzIwMTgwOTIxMTUwMjQwNTAx" f3durn="urn:adsk.wipprod:dm.lineage:GSJ6iZW7T-ifCIeOwvPvjQ" pcbguid="b42dcfff-eba5-4b7b-b8d8-54aa01b8e055" lastpulledtime="" lastsyncedchangeguid="7340f699-62a9-14f6-8329-5ece7c968610"/>
+<fusionsync huburn="a.cGVyc29uYWw6dWUyYjVjZTIy" projecturn="a.cGVyc29uYWw6dWUyYjVjZTIyIzIwMTgwOTIxMTUwMjQwNTAx" f3durn="urn:adsk.wipprod:dm.lineage:GSJ6iZW7T-ifCIeOwvPvjQ" pcbguid="b42dcfff-eba5-4b7b-b8d8-54aa01b8e055" lastpulledtime="" lastsyncedchangeguid="24a032fd-58df-3baa-aadd-83ea89c3b94e"/>
 <plain>
 <wire x1="17.5" y1="0" x2="51.5" y2="0" width="0" layer="20"/>
 <wire x1="71.5" y1="0" x2="105.5" y2="0" width="0" layer="20"/>
@@ -1820,8 +1820,8 @@ Covered vias can be set in Masks (Limit).
 <attribute name="NAME" x="124.885" y="43.54" size="1.27" layer="25" font="vector" rot="R270"/>
 <attribute name="VALUE" x="79.8" y="41" size="1.27" layer="27" font="vector"/>
 </element>
-<element name="U1" library="wiznet" package="WIZ820" value="WIZ820IO" x="20" y="53" smashed="yes" rot="R180">
-<attribute name="NAME" x="12.38" y="47.158" size="1.6764" layer="25"/>
+<element name="U1" library="wiznet" package="WIZ820" value="WIZ820IO" x="23" y="52" smashed="yes" rot="R180">
+<attribute name="NAME" x="15.38" y="46.158" size="1.6764" layer="25"/>
 </element>
 <element name="ENCODEUR_GAUCHE" library="con-jst" package="GH-04-V" value="JST-04GH-V" x="24" y="6" smashed="yes" rot="R180"/>
 <element name="ENCODEUR_DROIT" library="con-jst" package="GH-04-V" value="JST-04GH-V" x="99" y="5" smashed="yes" rot="R180"/>
@@ -1886,10 +1886,10 @@ Covered vias can be set in Masks (Limit).
 <contactref element="S3" pad="1"/>
 <contactref element="LED2" pad="C"/>
 <wire x1="86.15" y1="33.38" x2="121.71" y2="48.62" width="0" layer="19" extent="1-1"/>
-<wire x1="30.16" y1="53" x2="86.15" y2="33.38" width="0" layer="19" extent="1-1"/>
-<wire x1="30.16" y1="55.54" x2="30.16" y2="53" width="0" layer="19" extent="1-1"/>
-<wire x1="9.84" y1="53" x2="30.16" y2="53" width="0" layer="19" extent="1-1"/>
-<wire x1="33" y1="4.46" x2="9.84" y2="53" width="0" layer="19" extent="1-1"/>
+<wire x1="33.16" y1="52" x2="86.15" y2="33.38" width="0" layer="19" extent="1-1"/>
+<wire x1="33.16" y1="54.54" x2="33.16" y2="52" width="0" layer="19" extent="1-1"/>
+<wire x1="12.84" y1="52" x2="33.16" y2="52" width="0" layer="19" extent="1-1"/>
+<wire x1="33" y1="4.46" x2="12.84" y2="52" width="0" layer="19" extent="1-1"/>
 <wire x1="66.46" y1="12" x2="33" y2="4.46" width="0" layer="19" extent="1-1"/>
 <wire x1="83" y1="18.46" x2="66.46" y2="12" width="0" layer="19" extent="1-1"/>
 <wire x1="92" y1="26.422" x2="83" y2="18.46" width="0" layer="19" extent="1-1"/>
@@ -1908,7 +1908,7 @@ Covered vias can be set in Masks (Limit).
 <signal name="VIN3V3">
 <contactref element="U1" pad="VIN2"/>
 <contactref element="U1" pad="VIN1"/>
-<wire x1="9.84" y1="58.08" x2="9.84" y2="55.54" width="0" layer="19" extent="1-1"/>
+<wire x1="12.84" y1="57.08" x2="12.84" y2="54.54" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="DYN_VCC">
 <contactref element="AX12_AR" pad="DYN_VCC"/>
