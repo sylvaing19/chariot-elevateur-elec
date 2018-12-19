@@ -3,7 +3,7 @@
 <eagle version="9.2.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.5" altunitdist="mm" altunit="mm"/>
@@ -1740,6 +1740,44 @@ www.irf.com&lt;p&gt;
 </package3d>
 </packages3d>
 </library>
+<library name="Adafruit-7-segment">
+<packages>
+<package name="0.56&quot;LED_BACKPACK">
+<wire x1="22.352" y1="-13.462" x2="-22.352" y2="-13.462" width="0.1524" layer="21"/>
+<wire x1="-22.352" y1="-13.462" x2="-24.892" y2="-10.922" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-24.892" y1="-10.922" x2="-24.892" y2="10.922" width="0.1524" layer="21"/>
+<wire x1="-24.892" y1="10.922" x2="-22.352" y2="13.462" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-22.352" y1="13.462" x2="22.352" y2="13.462" width="0.1524" layer="21"/>
+<wire x1="22.352" y1="13.462" x2="24.892" y2="10.922" width="0.1524" layer="21" curve="-90"/>
+<wire x1="24.892" y1="10.922" x2="24.892" y2="-10.922" width="0.1524" layer="21"/>
+<wire x1="24.892" y1="-10.922" x2="22.352" y2="-13.462" width="0.1524" layer="21" curve="-90"/>
+<hole x="-21.59" y="11.43" drill="2.032"/>
+<hole x="21.59" y="11.43" drill="2.032"/>
+<hole x="-21.59" y="-11.43" drill="2.032"/>
+<hole x="21.59" y="-11.43" drill="2.032"/>
+<pad name="VCC" x="-3.81" y="11.43" drill="0.8"/>
+<pad name="GND" x="-1.27" y="11.43" drill="0.8"/>
+<pad name="SDA" x="1.27" y="11.43" drill="0.8"/>
+<pad name="SCL" x="3.81" y="11.43" drill="0.8"/>
+<text x="-21.59" y="13.97" size="1.778" layer="25">&gt;NAME</text>
+</package>
+</packages>
+</library>
+<library name="con-xt">
+<packages>
+<package name="XT-60">
+<wire x1="-4" y1="-8" x2="-4" y2="5" width="0.1524" layer="21"/>
+<wire x1="-4" y1="5" x2="-1" y2="8" width="0.1524" layer="21"/>
+<wire x1="-1" y1="8" x2="1" y2="8" width="0.1524" layer="21"/>
+<wire x1="1" y1="8" x2="4" y2="5" width="0.1524" layer="21"/>
+<wire x1="4" y1="5" x2="4" y2="-8" width="0.1524" layer="21"/>
+<wire x1="4" y1="-8" x2="-4" y2="-8" width="0.1524" layer="21"/>
+<pad name="(+)" x="0" y="3" drill="4.5" diameter="6"/>
+<pad name="(-)" x="0" y="-4" drill="4.5" diameter="6"/>
+<text x="-3.9" y="-8.2" size="1.778" layer="21" align="top-left">&gt;NAME</text>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -2004,6 +2042,12 @@ Covered vias can be set in Masks (Limit).
 <element name="FUMIGENE" library="1NTech_pinhead" package="DYNAMIXEL_XL_1X03" value="DYNAMIXEL-1X03XL" x="107" y="14" smashed="yes" rot="R90"/>
 <element name="ENDSTOP" library="con-jst" package="GH-03-V" value="JST-03" x="51" y="18" smashed="yes" rot="R180"/>
 <element name="RASPBERRY" library="con-jst" package="GH-06-V" value="JST-06" x="42" y="45" smashed="yes" rot="R180"/>
+<element name="LED1" library="Adafruit-7-segment" package="0.56&quot;LED_BACKPACK" value="ADAFRUIT_7-SEGMENT-LED" x="61.5" y="64" smashed="yes">
+<attribute name="NAME" x="39.91" y="77.97" size="1.778" layer="25"/>
+</element>
+<element name="CON1" library="con-xt" package="XT-60" value="XT-60" x="20" y="28" smashed="yes">
+<attribute name="NAME" x="16.1" y="19.8" size="1.778" layer="21" align="top-left"/>
+</element>
 </elements>
 <signals>
 <signal name="GND">

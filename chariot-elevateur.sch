@@ -7208,6 +7208,107 @@ www.irf.com&lt;p&gt;
 </deviceset>
 </devicesets>
 </library>
+<library name="Adafruit-7-segment">
+<packages>
+<package name="0.56&quot;LED_BACKPACK">
+<wire x1="22.352" y1="-13.462" x2="-22.352" y2="-13.462" width="0.1524" layer="21"/>
+<wire x1="-22.352" y1="-13.462" x2="-24.892" y2="-10.922" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-24.892" y1="-10.922" x2="-24.892" y2="10.922" width="0.1524" layer="21"/>
+<wire x1="-24.892" y1="10.922" x2="-22.352" y2="13.462" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-22.352" y1="13.462" x2="22.352" y2="13.462" width="0.1524" layer="21"/>
+<wire x1="22.352" y1="13.462" x2="24.892" y2="10.922" width="0.1524" layer="21" curve="-90"/>
+<wire x1="24.892" y1="10.922" x2="24.892" y2="-10.922" width="0.1524" layer="21"/>
+<wire x1="24.892" y1="-10.922" x2="22.352" y2="-13.462" width="0.1524" layer="21" curve="-90"/>
+<hole x="-21.59" y="11.43" drill="2.032"/>
+<hole x="21.59" y="11.43" drill="2.032"/>
+<hole x="-21.59" y="-11.43" drill="2.032"/>
+<hole x="21.59" y="-11.43" drill="2.032"/>
+<pad name="VCC" x="-3.81" y="11.43" drill="0.8"/>
+<pad name="GND" x="-1.27" y="11.43" drill="0.8"/>
+<pad name="SDA" x="1.27" y="11.43" drill="0.8"/>
+<pad name="SCL" x="3.81" y="11.43" drill="0.8"/>
+<text x="-21.59" y="13.97" size="1.778" layer="25">&gt;NAME</text>
+</package>
+</packages>
+<symbols>
+<symbol name="HT16K33">
+<pin name="VIN" x="-7.62" y="-5.08" visible="pin" length="middle" rot="R90"/>
+<pin name="GND" x="-2.54" y="-5.08" visible="pin" length="middle" rot="R90"/>
+<pin name="SDA" x="2.54" y="-5.08" visible="pin" length="middle" rot="R90"/>
+<pin name="SCL" x="7.62" y="-5.08" visible="pin" length="middle" rot="R90"/>
+<wire x1="-10.16" y1="0" x2="10.16" y2="0" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="0" x2="10.16" y2="12.7" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="12.7" x2="-10.16" y2="12.7" width="0.1524" layer="94"/>
+<wire x1="-10.16" y1="12.7" x2="-10.16" y2="0" width="0.1524" layer="94"/>
+<text x="0" y="10.16" size="1.778" layer="94" align="bottom-center">LED 7-segment</text>
+<text x="-9.652" y="12.954" size="1.778" layer="95">&gt;NAME</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="ADAFRUIT_7-SEGMENT-LED" prefix="LED">
+<gates>
+<gate name="G$1" symbol="HT16K33" x="0" y="-5.08"/>
+</gates>
+<devices>
+<device name="" package="0.56&quot;LED_BACKPACK">
+<connects>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="SCL" pad="SCL"/>
+<connect gate="G$1" pin="SDA" pad="SDA"/>
+<connect gate="G$1" pin="VIN" pad="VCC"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="con-xt">
+<packages>
+<package name="XT-60">
+<wire x1="-4" y1="-8" x2="-4" y2="5" width="0.1524" layer="21"/>
+<wire x1="-4" y1="5" x2="-1" y2="8" width="0.1524" layer="21"/>
+<wire x1="-1" y1="8" x2="1" y2="8" width="0.1524" layer="21"/>
+<wire x1="1" y1="8" x2="4" y2="5" width="0.1524" layer="21"/>
+<wire x1="4" y1="5" x2="4" y2="-8" width="0.1524" layer="21"/>
+<wire x1="4" y1="-8" x2="-4" y2="-8" width="0.1524" layer="21"/>
+<pad name="(+)" x="0" y="3" drill="4.5" diameter="6"/>
+<pad name="(-)" x="0" y="-4" drill="4.5" diameter="6"/>
+<text x="-3.9" y="-8.2" size="1.778" layer="21" align="top-left">&gt;NAME</text>
+</package>
+</packages>
+<symbols>
+<symbol name="CON-XT">
+<pin name="(+)" x="-5.08" y="2.54" visible="pin" length="middle"/>
+<pin name="(-)" x="-5.08" y="-2.54" visible="pin" length="middle"/>
+<wire x1="-2.54" y1="5.08" x2="7.62" y2="5.08" width="0.1524" layer="94"/>
+<wire x1="7.62" y1="5.08" x2="7.62" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="7.62" y1="-5.08" x2="-2.54" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="-5.08" x2="-2.54" y2="5.08" width="0.1524" layer="94"/>
+<text x="-2.286" y="5.334" size="1.778" layer="95">&gt;NAME</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="XT-60" prefix="CON">
+<gates>
+<gate name="G$1" symbol="CON-XT" x="-2.54" y="0"/>
+</gates>
+<devices>
+<device name="" package="XT-60">
+<connects>
+<connect gate="G$1" pin="(+)" pad="(+)"/>
+<connect gate="G$1" pin="(-)" pad="(-)"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -7247,6 +7348,8 @@ www.irf.com&lt;p&gt;
 <part name="FUMIGENE" library="1NTech_pinhead" deviceset="DYNAMIXEL-1X03" device="XL"/>
 <part name="ENDSTOP" library="con-jst" deviceset="JST-03" device=""/>
 <part name="RASPBERRY" library="con-jst" deviceset="JST-06" device=""/>
+<part name="LED1" library="Adafruit-7-segment" deviceset="ADAFRUIT_7-SEGMENT-LED" device=""/>
+<part name="CON1" library="con-xt" deviceset="XT-60" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -7258,9 +7361,9 @@ www.irf.com&lt;p&gt;
 <attribute name="LAST_DATE_TIME" x="217.17" y="10.16" size="2.286" layer="94"/>
 <attribute name="SHEET" x="230.505" y="5.08" size="2.54" layer="94"/>
 </instance>
-<instance part="U$1" gate="G$1" x="195.58" y="109.22" smashed="yes">
-<attribute name="NAME" x="189.992" y="163.83" size="1.27" layer="95" font="vector" ratio="15"/>
-<attribute name="VALUE" x="192.786" y="53.34" size="1.27" layer="96" font="vector" ratio="15"/>
+<instance part="U$1" gate="G$1" x="215.9" y="111.76" smashed="yes">
+<attribute name="NAME" x="210.312" y="166.37" size="1.27" layer="95" font="vector" ratio="15"/>
+<attribute name="VALUE" x="213.106" y="55.88" size="1.27" layer="96" font="vector" ratio="15"/>
 </instance>
 <instance part="U1" gate="G$1" x="127" y="35.56" smashed="yes"/>
 <instance part="ENCODEUR_GAUCHE" gate="G$1" x="33.02" y="162.56" smashed="yes">
@@ -7339,6 +7442,12 @@ www.irf.com&lt;p&gt;
 </instance>
 <instance part="RASPBERRY" gate="G$1" x="88.9" y="93.98" smashed="yes">
 <attribute name="NAME" x="85.852" y="96.774" size="1.778" layer="95"/>
+</instance>
+<instance part="LED1" gate="G$1" x="162.56" y="38.1" smashed="yes">
+<attribute name="NAME" x="152.908" y="51.054" size="1.778" layer="95"/>
+</instance>
+<instance part="CON1" gate="G$1" x="147.32" y="162.56" smashed="yes">
+<attribute name="NAME" x="145.034" y="167.894" size="1.778" layer="95"/>
 </instance>
 </instances>
 <busses>
