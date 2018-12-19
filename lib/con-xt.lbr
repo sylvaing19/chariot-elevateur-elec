@@ -80,8 +80,8 @@
 <wire x1="1" y1="8" x2="4" y2="5" width="0.1524" layer="21"/>
 <wire x1="4" y1="5" x2="4" y2="-8" width="0.1524" layer="21"/>
 <wire x1="4" y1="-8" x2="-4" y2="-8" width="0.1524" layer="21"/>
-<pad name="(+)" x="0" y="3" drill="4.5" diameter="6"/>
-<pad name="(-)" x="0" y="-4" drill="4.5" diameter="6"/>
+<pad name="(-)" x="0" y="3.625" drill="4.5" diameter="6"/>
+<pad name="(+)" x="0" y="-3.625" drill="4.5" diameter="6"/>
 <text x="-3.9" y="-8.2" size="1.778" layer="21" align="top-left">&gt;NAME</text>
 </package>
 </packages>

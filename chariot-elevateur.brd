@@ -163,7 +163,7 @@
 <layer number="255" name="Accent" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
 <board>
-<fusionsync huburn="a.cGVyc29uYWw6dWUyYjVjZTIy" projecturn="a.cGVyc29uYWw6dWUyYjVjZTIyIzIwMTgwOTIxMTUwMjQwNTAx" f3durn="urn:adsk.wipprod:dm.lineage:GSJ6iZW7T-ifCIeOwvPvjQ" pcbguid="b42dcfff-eba5-4b7b-b8d8-54aa01b8e055" lastpulledtime="" lastsyncedchangeguid="d015edff-36eb-46ed-7078-28cb67592d61"/>
+<fusionsync huburn="a.cGVyc29uYWw6dWUyYjVjZTIy" projecturn="a.cGVyc29uYWw6dWUyYjVjZTIyIzIwMTgwOTIxMTUwMjQwNTAx" f3durn="urn:adsk.wipprod:dm.lineage:GSJ6iZW7T-ifCIeOwvPvjQ" pcbguid="b42dcfff-eba5-4b7b-b8d8-54aa01b8e055" lastpulledtime="" lastsyncedchangeguid="4addb0c3-d07b-46e0-0d4a-310a37b61caa"/>
 <plain>
 <wire x1="17.5" y1="0" x2="51.5" y2="0" width="0" layer="20"/>
 <wire x1="71.5" y1="0" x2="105.5" y2="0" width="0" layer="20"/>
@@ -179,6 +179,10 @@
 <wire x1="51.5" y1="0" x2="51.5" y2="6" width="0" layer="20"/>
 <wire x1="51.5" y1="6" x2="71.5" y2="6" width="0" layer="20"/>
 <wire x1="71.5" y1="6" x2="71.5" y2="0" width="0" layer="20"/>
+<hole x="45" y="4" drill="3.2"/>
+<circle x="45" y="4" radius="3" width="0.1524" layer="39"/>
+<circle x="45" y="4" radius="4" width="0.1524" layer="40"/>
+<wire x1="0" y1="73" x2="123" y2="73" width="0.1524" layer="40"/>
 </plain>
 <libraries>
 <library name="Teensy_libSG">
@@ -503,7 +507,7 @@ by exp-lbrs.ulp</description>
 </package>
 </packages>
 </library>
-<library name="switch" urn="urn:adsk.eagle:library:380">
+<library name="switch">
 <description>&lt;b&gt;Switches&lt;/b&gt;&lt;p&gt;
 Marquardt, Siemens, C&amp;K, ITT, and others&lt;p&gt;
 &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
@@ -528,9 +532,12 @@ Source: http://www2.produktinfo.conrad.com/datenblaetter/700000-724999/705152-da
 </package>
 </packages>
 <packages3d>
-<package3d name="TL3XPO" urn="urn:adsk.eagle:package:27745/1" type="box" library_version="1">
+<package3d name="TL3XPO" urn="urn:adsk.eagle:package:27745/1" type="box" library_version="2">
 <description>TINY SWITCH
 Source: http://www2.produktinfo.conrad.com/datenblaetter/700000-724999/705152-da-01-de-Subminiaturschalter_TL_36YO.pdf</description>
+<packageinstances>
+<packageinstance name="TL3XPO"/>
+</packageinstances>
 </package3d>
 </packages3d>
 </library>
@@ -564,9 +571,12 @@ Extended by Federico Battaglin &lt;author&gt;&amp;lt;federico.rd@fdpinternationa
 </package>
 </packages>
 <packages3d>
-<package3d name="1206" urn="urn:adsk.eagle:package:15796/1" type="box" library_version="2">
+<package3d name="1206" urn="urn:adsk.eagle:package:15796/2" type="model" library_version="4">
 <description>CHICAGO MINIATURE LAMP, INC.
 7022X Series SMT LEDs 1206 Package Size</description>
+<packageinstances>
+<packageinstance name="1206"/>
+</packageinstances>
 </package3d>
 </packages3d>
 </library>
@@ -1640,7 +1650,7 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 &lt;/table&gt;
 &lt;/BODY&gt;&lt;/HTML&gt;</description>
 <packages>
-<package name="R0805" urn="urn:adsk.eagle:footprint:25627/1" library_version="1">
+<package name="R0805" urn="urn:adsk.eagle:footprint:23045/1" library_version="2">
 <description>&lt;b&gt;RESISTOR&lt;/b&gt;&lt;p&gt;</description>
 <wire x1="-0.41" y1="0.635" x2="0.41" y2="0.635" width="0.1524" layer="51"/>
 <wire x1="-0.41" y1="-0.635" x2="0.41" y2="-0.635" width="0.1524" layer="51"/>
@@ -1658,8 +1668,11 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 </package>
 </packages>
 <packages3d>
-<package3d name="R0805" urn="urn:adsk.eagle:package:26059/1" type="box" library_version="1">
+<package3d name="R0805" urn="urn:adsk.eagle:package:23553/2" type="model" library_version="2">
 <description>RESISTOR</description>
+<packageinstances>
+<packageinstance name="R0805"/>
+</packageinstances>
 </package3d>
 </packages3d>
 </library>
@@ -1671,7 +1684,7 @@ www.semiconductors.com;&lt;br&gt;
 www.irf.com&lt;p&gt;
 &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
 <packages>
-<package name="SOT23" urn="urn:adsk.eagle:footprint:29641/1" library_version="1">
+<package name="SOT23" urn="urn:adsk.eagle:footprint:28669/1" library_version="3">
 <description>&lt;b&gt;SOT-23&lt;/b&gt;</description>
 <wire x1="1.4224" y1="0.6604" x2="1.4224" y2="-0.6604" width="0.1524" layer="51"/>
 <wire x1="1.4224" y1="-0.6604" x2="-1.4224" y2="-0.6604" width="0.1524" layer="51"/>
@@ -1688,8 +1701,11 @@ www.irf.com&lt;p&gt;
 </package>
 </packages>
 <packages3d>
-<package3d name="SOT23" urn="urn:adsk.eagle:package:29752/1" type="box" library_version="1">
+<package3d name="SOT23" urn="urn:adsk.eagle:package:28738/2" type="model" library_version="3">
 <description>SOT-23</description>
+<packageinstances>
+<packageinstance name="SOT23"/>
+</packageinstances>
 </package3d>
 </packages3d>
 </library>
@@ -1697,45 +1713,39 @@ www.irf.com&lt;p&gt;
 <description>&lt;b&gt;Pin Header Connectors&lt;/b&gt;&lt;p&gt;
 &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
 <packages>
-<package name="1X03" urn="urn:adsk.eagle:footprint:22340/1" library_version="3">
+<package name="1X03/90" urn="urn:adsk.eagle:footprint:22341/1" library_version="3">
 <description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
-<wire x1="-3.175" y1="1.27" x2="-1.905" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="-1.905" y1="1.27" x2="-1.27" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="-1.27" y1="0.635" x2="-1.27" y2="-0.635" width="0.1524" layer="21"/>
-<wire x1="-1.27" y1="-0.635" x2="-1.905" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="-1.27" y1="0.635" x2="-0.635" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="-0.635" y1="1.27" x2="0.635" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="0.635" y1="1.27" x2="1.27" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="1.27" y1="0.635" x2="1.27" y2="-0.635" width="0.1524" layer="21"/>
-<wire x1="1.27" y1="-0.635" x2="0.635" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="0.635" y1="-1.27" x2="-0.635" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="-0.635" y1="-1.27" x2="-1.27" y2="-0.635" width="0.1524" layer="21"/>
-<wire x1="-3.81" y1="0.635" x2="-3.81" y2="-0.635" width="0.1524" layer="21"/>
-<wire x1="-3.175" y1="1.27" x2="-3.81" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="-3.81" y1="-0.635" x2="-3.175" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="-1.905" y1="-1.27" x2="-3.175" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="1.27" y1="0.635" x2="1.905" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="1.905" y1="1.27" x2="3.175" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="3.175" y1="1.27" x2="3.81" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="3.81" y1="0.635" x2="3.81" y2="-0.635" width="0.1524" layer="21"/>
-<wire x1="3.81" y1="-0.635" x2="3.175" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="3.175" y1="-1.27" x2="1.905" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="1.905" y1="-1.27" x2="1.27" y2="-0.635" width="0.1524" layer="21"/>
-<pad name="1" x="-2.54" y="0" drill="1.016" shape="long" rot="R90"/>
-<pad name="2" x="0" y="0" drill="1.016" shape="long" rot="R90"/>
-<pad name="3" x="2.54" y="0" drill="1.016" shape="long" rot="R90"/>
-<text x="-3.8862" y="1.8288" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-3.81" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="51"/>
-<rectangle x1="-2.794" y1="-0.254" x2="-2.286" y2="0.254" layer="51"/>
-<rectangle x1="2.286" y1="-0.254" x2="2.794" y2="0.254" layer="51"/>
+<wire x1="-3.81" y1="-1.905" x2="-1.27" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="-1.905" x2="-1.27" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="0.635" x2="-3.81" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="-3.81" y1="0.635" x2="-3.81" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="-2.54" y1="6.985" x2="-2.54" y2="1.27" width="0.762" layer="21"/>
+<wire x1="-1.27" y1="-1.905" x2="1.27" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="-1.905" x2="1.27" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="0.635" x2="-1.27" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="0" y1="6.985" x2="0" y2="1.27" width="0.762" layer="21"/>
+<wire x1="1.27" y1="-1.905" x2="3.81" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="3.81" y1="-1.905" x2="3.81" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="3.81" y1="0.635" x2="1.27" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="2.54" y1="6.985" x2="2.54" y2="1.27" width="0.762" layer="21"/>
+<pad name="1" x="-2.54" y="-3.81" drill="1.016" shape="long" rot="R90"/>
+<pad name="2" x="0" y="-3.81" drill="1.016" shape="long" rot="R90"/>
+<pad name="3" x="2.54" y="-3.81" drill="1.016" shape="long" rot="R90"/>
+<text x="-4.445" y="-3.81" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
+<text x="5.715" y="-3.81" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+<rectangle x1="-2.921" y1="0.635" x2="-2.159" y2="1.143" layer="21"/>
+<rectangle x1="-0.381" y1="0.635" x2="0.381" y2="1.143" layer="21"/>
+<rectangle x1="2.159" y1="0.635" x2="2.921" y2="1.143" layer="21"/>
+<rectangle x1="-2.921" y1="-2.921" x2="-2.159" y2="-1.905" layer="21"/>
+<rectangle x1="-0.381" y1="-2.921" x2="0.381" y2="-1.905" layer="21"/>
+<rectangle x1="2.159" y1="-2.921" x2="2.921" y2="-1.905" layer="21"/>
 </package>
 </packages>
 <packages3d>
-<package3d name="1X03" urn="urn:adsk.eagle:package:22458/2" type="model" library_version="3">
+<package3d name="1X03/90" urn="urn:adsk.eagle:package:22459/2" type="model" library_version="3">
 <description>PIN HEADER</description>
 <packageinstances>
-<packageinstance name="1X03"/>
+<packageinstance name="1X03/90"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -1772,8 +1782,8 @@ www.irf.com&lt;p&gt;
 <wire x1="1" y1="8" x2="4" y2="5" width="0.1524" layer="21"/>
 <wire x1="4" y1="5" x2="4" y2="-8" width="0.1524" layer="21"/>
 <wire x1="4" y1="-8" x2="-4" y2="-8" width="0.1524" layer="21"/>
-<pad name="(+)" x="0" y="3" drill="4.5" diameter="6"/>
-<pad name="(-)" x="0" y="-4" drill="4.5" diameter="6"/>
+<pad name="(-)" x="0" y="3.625" drill="4.5" diameter="6"/>
+<pad name="(+)" x="0" y="-3.625" drill="4.5" diameter="6"/>
 <text x="-3.9" y="-8.2" size="1.778" layer="21" align="top-left">&gt;NAME</text>
 </package>
 </packages>
@@ -1982,71 +1992,71 @@ Covered vias can be set in Masks (Limit).
 <element name="U1" library="wiznet" package="WIZ820" value="WIZ820IO" x="23" y="52" smashed="yes" rot="R180">
 <attribute name="NAME" x="15.38" y="46.158" size="1.6764" layer="25"/>
 </element>
-<element name="ENCODEUR_GAUCHE" library="con-jst" package="GH-04-V" value="JST-04GH-V" x="24" y="6" smashed="yes" rot="R180"/>
+<element name="ENCODEUR_GAUCHE" library="con-jst" package="GH-04-V" value="JST-04GH-V" x="24" y="5" smashed="yes" rot="R180"/>
 <element name="ENCODEUR_DROIT" library="con-jst" package="GH-04-V" value="JST-04GH-V" x="99" y="5" smashed="yes" rot="R180"/>
-<element name="JUMPER" library="con-jst" package="GH-03-V" value="JST-03" x="89" y="5" smashed="yes" rot="R180"/>
-<element name="AX12_AV" library="1NTech_pinhead" package="DYNAMIXEL_AX_1X03" value="DYNAMIXEL-1X03AX" x="54" y="12" smashed="yes">
-<attribute name="RS_AX" value="687-8124" x="54" y="18" size="1.778" layer="27" display="off"/>
-<attribute name="RS_XL" value="688-3283" x="54" y="18" size="1.778" layer="27" display="off"/>
+<element name="JUMPER" library="con-jst" package="GH-03-V" value="JST-03" x="82" y="5" smashed="yes" rot="R180"/>
+<element name="AX12_AV" library="1NTech_pinhead" package="DYNAMIXEL_AX_1X03" value="DYNAMIXEL-1X03AX" x="54" y="10" smashed="yes">
+<attribute name="RS_AX" value="687-8124" x="54" y="16" size="1.778" layer="27" display="off"/>
+<attribute name="RS_XL" value="688-3283" x="54" y="16" size="1.778" layer="27" display="off"/>
 </element>
-<element name="AX12_AR" library="1NTech_pinhead" package="DYNAMIXEL_AX_1X03" value="DYNAMIXEL-1X03AX" x="32" y="13" smashed="yes">
-<attribute name="RS_AX" value="687-8124" x="32" y="7" size="1.778" layer="27" display="off"/>
-<attribute name="RS_XL" value="688-3283" x="32" y="7" size="1.778" layer="27" display="off"/>
+<element name="AX12_AR" library="1NTech_pinhead" package="DYNAMIXEL_AX_1X03" value="DYNAMIXEL-1X03AX" x="14" y="14" smashed="yes" rot="R90">
+<attribute name="RS_AX" value="687-8124" x="20" y="14" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="RS_XL" value="688-3283" x="20" y="14" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="PAS_A_PAS" library="jst-ph" package="JST-PH6" value="" x="67" y="12" smashed="yes" rot="R180">
-<attribute name="NAME" x="74" y="8.4999" size="1.27" layer="25" rot="R180"/>
+<element name="PAS_A_PAS" library="jst-ph" package="JST-PH6" value="" x="67" y="10" smashed="yes" rot="R180">
+<attribute name="NAME" x="74" y="6.4999" size="1.27" layer="25" rot="R180"/>
 </element>
 <element name="S1" library="stepper" package="A4988-BREAKOUT" value="A4988-BREAKOUT" x="67" y="23" smashed="yes" rot="R90">
 <attribute name="NAME" x="56.586" y="15.38" size="1.27" layer="25" rot="R90"/>
 </element>
-<element name="S3" library="switch" library_urn="urn:adsk.eagle:library:380" package="TL3XPO" package3d_urn="urn:adsk.eagle:package:27745/1" value="TL36PO" x="99" y="75" smashed="yes">
+<element name="S3" library="switch" package="TL3XPO" package3d_urn="urn:adsk.eagle:package:27745/1" value="TL36PO" x="99" y="75" smashed="yes">
 <attribute name="NAME" x="93.92" y="78.175" size="1.778" layer="25"/>
 <attribute name="RS" value="913-9069" x="87" y="87" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="93.92" y="69.92" size="1.778" layer="27"/>
 </element>
-<element name="LED2" library="led" library_urn="urn:adsk.eagle:library:259" package="1206" package3d_urn="urn:adsk.eagle:package:15796/1" value="green" x="94" y="64" smashed="yes" rot="R90">
+<element name="LED2" library="led" library_urn="urn:adsk.eagle:library:259" package="1206" package3d_urn="urn:adsk.eagle:package:15796/2" value="green" x="94" y="64" smashed="yes" rot="R90">
 <attribute name="NAME" x="92.73" y="62.73" size="1.27" layer="25" rot="R90"/>
 <attribute name="VALUE" x="96.54" y="62.73" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="LED3" library="led" library_urn="urn:adsk.eagle:library:259" package="1206" package3d_urn="urn:adsk.eagle:package:15796/1" value="orange" x="94" y="57" smashed="yes" rot="R90">
+<element name="LED3" library="led" library_urn="urn:adsk.eagle:library:259" package="1206" package3d_urn="urn:adsk.eagle:package:15796/2" value="orange" x="94" y="57" smashed="yes" rot="R90">
 <attribute name="NAME" x="92.73" y="55.73" size="1.27" layer="25" rot="R90"/>
 <attribute name="VALUE" x="96.54" y="55.73" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="R4" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0805" package3d_urn="urn:adsk.eagle:package:26059/1" value="330" x="101" y="56" smashed="yes" rot="R90">
+<element name="R4" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="330" x="101" y="56" smashed="yes" rot="R90">
 <attribute name="NAME" x="99.73" y="55.365" size="1.27" layer="25" rot="R90"/>
 <attribute name="VALUE" x="103.54" y="55.365" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="R5" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0805" package3d_urn="urn:adsk.eagle:package:26059/1" value="330" x="101" y="61" smashed="yes" rot="R90">
+<element name="R5" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="330" x="101" y="61" smashed="yes" rot="R90">
 <attribute name="NAME" x="99.73" y="60.365" size="1.27" layer="25" rot="R90"/>
 <attribute name="VALUE" x="103.54" y="60.365" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="Q1" library="transistor-small-signal" library_urn="urn:adsk.eagle:library:401" package="SOT23" package3d_urn="urn:adsk.eagle:package:29752/1" value="BSS138" x="108" y="57" smashed="yes" rot="R90">
+<element name="Q1" library="transistor-small-signal" library_urn="urn:adsk.eagle:library:401" package="SOT23" package3d_urn="urn:adsk.eagle:package:28738/2" value="BSS138" x="108" y="57" smashed="yes" rot="R90">
 <attribute name="NAME" x="106.095" y="55.095" size="1.27" layer="25" rot="R90"/>
 <attribute name="VALUE" x="111.175" y="55.095" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="R2" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0805" package3d_urn="urn:adsk.eagle:package:26059/1" value="10k" x="115" y="56" smashed="yes" rot="R90">
+<element name="R2" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="10k" x="115" y="56" smashed="yes" rot="R90">
 <attribute name="NAME" x="113.73" y="55.365" size="1.27" layer="25" rot="R90"/>
 <attribute name="VALUE" x="117.54" y="55.365" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="R3" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0805" package3d_urn="urn:adsk.eagle:package:26059/1" value="10k" x="115" y="61" smashed="yes" rot="R90">
+<element name="R3" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="10k" x="115" y="61" smashed="yes" rot="R90">
 <attribute name="NAME" x="113.73" y="60.365" size="1.27" layer="25" rot="R90"/>
 <attribute name="VALUE" x="117.54" y="60.365" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="VESC" library="pinhead" library_urn="urn:adsk.eagle:library:325" package="1X03" package3d_urn="urn:adsk.eagle:package:22458/2" value="" x="84" y="12" smashed="yes">
-<attribute name="NAME" x="80.1138" y="13.8288" size="1.27" layer="25" ratio="10"/>
-<attribute name="VALUE" x="80.19" y="8.825" size="1.27" layer="27"/>
+<element name="VESC" library="pinhead" library_urn="urn:adsk.eagle:library:325" package="1X03/90" package3d_urn="urn:adsk.eagle:package:22459/2" value="" x="90" y="15" smashed="yes" rot="R180">
+<attribute name="NAME" x="93.8862" y="13.1712" size="1.27" layer="25" ratio="10" rot="R180"/>
+<attribute name="VALUE" x="93.81" y="18.175" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="TOF_AR" library="con-jst" package="GH-08-V" value="JST-08" x="96" y="12" smashed="yes" rot="R180"/>
-<element name="PHARES_AR" library="con-jst" package="GH-05-V" value="JST-05" x="35" y="6" smashed="yes" rot="R180"/>
-<element name="PHARES_AV" library="con-jst" package="GH-05-V" value="JST-05" x="19" y="14" smashed="yes" rot="R180"/>
-<element name="FUMIGENE" library="1NTech_pinhead" package="DYNAMIXEL_XL_1X03" value="DYNAMIXEL-1X03XL" x="107" y="14" smashed="yes" rot="R90"/>
-<element name="ENDSTOP" library="con-jst" package="GH-03-V" value="JST-03" x="51" y="18" smashed="yes" rot="R180"/>
-<element name="RASPBERRY" library="con-jst" package="GH-06-V" value="JST-06" x="42" y="45" smashed="yes" rot="R180"/>
+<element name="TOF_AR" library="con-jst" package="GH-08-V" value="JST-08" x="107" y="17" smashed="yes" rot="R270"/>
+<element name="PHARES_AR" library="con-jst" package="GH-05-V" value="JST-05" x="24" y="13" smashed="yes" rot="R180"/>
+<element name="PHARES_AV" library="con-jst" package="GH-05-V" value="JST-05" x="24" y="21" smashed="yes" rot="R180"/>
+<element name="FUMIGENE" library="1NTech_pinhead" package="DYNAMIXEL_XL_1X03" value="DYNAMIXEL-1X03XL" x="99" y="12" smashed="yes" rot="R180"/>
+<element name="ENDSTOP" library="con-jst" package="GH-03-V" value="JST-03" x="51" y="16" smashed="yes" rot="R180"/>
+<element name="RASPBERRY" library="con-jst" package="GH-06-V" value="JST-06" x="42" y="46" smashed="yes"/>
 <element name="LED1" library="Adafruit-7-segment" package="0.56&quot;LED_BACKPACK" value="ADAFRUIT_7-SEGMENT-LED" x="61.5" y="64" smashed="yes">
 <attribute name="NAME" x="39.91" y="77.97" size="1.778" layer="25"/>
 </element>
-<element name="CON1" library="con-xt" package="XT-60" value="XT-60" x="20" y="28" smashed="yes">
-<attribute name="NAME" x="16.1" y="19.8" size="1.778" layer="21" align="top-left"/>
+<element name="CON1" library="con-xt" package="XT-60" value="XT-60" x="37" y="10" smashed="yes">
+<attribute name="NAME" x="33.1" y="1.8" size="1.778" layer="21" align="top-left"/>
 </element>
 </elements>
 <signals>
@@ -2064,10 +2074,10 @@ Covered vias can be set in Masks (Limit).
 <wire x1="94" y1="65.422" x2="121.71" y2="48.62" width="0" layer="19" extent="1-1"/>
 <wire x1="96.46" y1="75" x2="94" y2="65.422" width="0" layer="19" extent="1-1"/>
 <wire x1="86.15" y1="33.38" x2="96.46" y2="75" width="0" layer="19" extent="1-1"/>
-<wire x1="107" y1="12" x2="86.15" y2="33.38" width="0" layer="19" extent="1-1"/>
-<wire x1="51.46" y1="12" x2="86.15" y2="33.38" width="0" layer="19" extent="1-1"/>
-<wire x1="29.46" y1="13" x2="51.46" y2="12" width="0" layer="19" extent="1-1"/>
-<wire x1="33.16" y1="52" x2="29.46" y2="13" width="0" layer="19" extent="1-1"/>
+<wire x1="101" y1="12" x2="86.15" y2="33.38" width="0" layer="19" extent="1-1"/>
+<wire x1="51.46" y1="10" x2="86.15" y2="33.38" width="0" layer="19" extent="1-1"/>
+<wire x1="14" y1="11.46" x2="51.46" y2="10" width="0" layer="19" extent="1-1"/>
+<wire x1="33.16" y1="52" x2="14" y2="11.46" width="0" layer="19" extent="1-1"/>
 <wire x1="33.16" y1="54.54" x2="33.16" y2="52" width="0" layer="19" extent="1-1"/>
 <wire x1="12.84" y1="52" x2="33.16" y2="52" width="0" layer="19" extent="1-1"/>
 </signal>
@@ -2091,8 +2101,8 @@ Covered vias can be set in Masks (Limit).
 <contactref element="AX12_AR" pad="DYN_VCC"/>
 <contactref element="AX12_AV" pad="DYN_VCC"/>
 <contactref element="FUMIGENE" pad="VCC"/>
-<wire x1="54" y1="12" x2="107" y2="14" width="0" layer="19" extent="1-1"/>
-<wire x1="32" y1="13" x2="54" y2="12" width="0" layer="19" extent="1-1"/>
+<wire x1="54" y1="10" x2="99" y2="12" width="0" layer="19" extent="1-1"/>
+<wire x1="14" y1="14" x2="54" y2="10" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="+3V3">
 <contactref element="S3" pad="3"/>
