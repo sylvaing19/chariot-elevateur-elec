@@ -18551,6 +18551,7 @@ Source: &lt;a href="http://www.mikrocontroller.net/attachment/150645/157764-da-0
 <part name="EXTRA" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X5" device="" package3d_urn="urn:adsk.eagle:package:22469/2"/>
 <part name="SUPPLY57" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="SUPPLY58" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+5V/1" device=""/>
+<part name="SUPPLY59" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+5V/1" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -18571,6 +18572,9 @@ Source: &lt;a href="http://www.mikrocontroller.net/attachment/150645/157764-da-0
 </moduleinst>
 <moduleinst name="LEVEL_SHIFTER5" module="LEVEL_SHIFTER" x="124.46" y="53.34">
 <attribute name="NAME" x="124.46" y="53.34" size="2.032" layer="95" align="center"/>
+</moduleinst>
+<moduleinst name="LEVEL_SHIFTER6" module="LEVEL_SHIFTER" x="119.38" y="43.18">
+<attribute name="NAME" x="119.38" y="43.18" size="2.032" layer="95" align="center"/>
 </moduleinst>
 </moduleinsts>
 <instances>
@@ -18607,14 +18611,14 @@ Source: &lt;a href="http://www.mikrocontroller.net/attachment/150645/157764-da-0
 <instance part="AX12_AR" gate="G$1" x="149.86" y="144.78" smashed="yes" rot="R90">
 <attribute name="RS" x="149.86" y="144.78" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
-<instance part="PAS_A_PAS" gate="A" x="144.78" y="22.86" smashed="yes">
-<attribute name="NAME" x="142.24" y="31.242" size="1.778" layer="95"/>
-<attribute name="VALUE" x="142.24" y="10.414" size="1.778" layer="96"/>
-<attribute name="RS" x="144.78" y="22.86" size="1.27" layer="96" display="off"/>
-<attribute name="RS_F" x="144.78" y="22.86" size="1.27" layer="96" display="off"/>
+<instance part="PAS_A_PAS" gate="A" x="203.2" y="40.64" smashed="yes">
+<attribute name="NAME" x="200.66" y="49.022" size="1.778" layer="95"/>
+<attribute name="VALUE" x="200.66" y="28.194" size="1.778" layer="96"/>
+<attribute name="RS" x="203.2" y="40.64" size="1.27" layer="96" display="off"/>
+<attribute name="RS_F" x="203.2" y="40.64" size="1.27" layer="96" display="off"/>
 </instance>
-<instance part="S1" gate="G$1" x="119.38" y="22.86" smashed="yes">
-<attribute name="NAME" x="109.22" y="33.528" size="1.27" layer="95"/>
+<instance part="S1" gate="G$1" x="177.8" y="40.64" smashed="yes">
+<attribute name="NAME" x="167.64" y="51.308" size="1.27" layer="95"/>
 </instance>
 <instance part="S3" gate="BEF1" x="231.14" y="45.72" smashed="yes" rot="R270">
 <attribute name="RS" x="231.14" y="45.72" size="1.778" layer="96" rot="R270" display="off"/>
@@ -18813,11 +18817,11 @@ Source: &lt;a href="http://www.mikrocontroller.net/attachment/150645/157764-da-0
 <instance part="SUPPLY37" gate="G$1" x="109.22" y="144.78" smashed="yes" rot="R90">
 <attribute name="VALUE" x="106.045" y="140.97" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="SUPPLY38" gate="+24V" x="132.08" y="40.64" smashed="yes">
-<attribute name="VALUE" x="129.54" y="43.815" size="1.778" layer="96"/>
+<instance part="SUPPLY38" gate="+24V" x="190.5" y="58.42" smashed="yes">
+<attribute name="VALUE" x="187.96" y="61.595" size="1.778" layer="96"/>
 </instance>
-<instance part="SUPPLY39" gate="GND" x="134.62" y="10.16" smashed="yes">
-<attribute name="VALUE" x="132.715" y="6.985" size="1.778" layer="96"/>
+<instance part="SUPPLY39" gate="GND" x="193.04" y="27.94" smashed="yes">
+<attribute name="VALUE" x="191.135" y="24.765" size="1.778" layer="96"/>
 </instance>
 <instance part="SUPPLY40" gate="GND" x="71.12" y="22.86" smashed="yes">
 <attribute name="VALUE" x="69.215" y="19.685" size="1.778" layer="96"/>
@@ -18861,12 +18865,12 @@ Source: &lt;a href="http://www.mikrocontroller.net/attachment/150645/157764-da-0
 <instance part="SUPPLY48" gate="G$1" x="147.32" y="55.88" smashed="yes" rot="R270">
 <attribute name="VALUE" x="150.495" y="59.055" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="C8" gate="G$1" x="137.16" y="35.56" smashed="yes" rot="R90">
-<attribute name="NAME" x="136.6774" y="36.703" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="141.7574" y="36.703" size="1.778" layer="96" rot="R90"/>
+<instance part="C8" gate="G$1" x="195.58" y="53.34" smashed="yes" rot="R90">
+<attribute name="NAME" x="195.0974" y="54.483" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="200.1774" y="54.483" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="SUPPLY49" gate="GND" x="147.32" y="35.56" smashed="yes" rot="R90">
-<attribute name="VALUE" x="150.495" y="33.655" size="1.778" layer="96" rot="R90"/>
+<instance part="SUPPLY49" gate="GND" x="205.74" y="53.34" smashed="yes" rot="R90">
+<attribute name="VALUE" x="208.915" y="51.435" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="Q1" gate="G$1" x="134.62" y="129.54" smashed="yes">
 <attribute name="NAME" x="137.16" y="129.54" size="1.778" layer="95"/>
@@ -18957,29 +18961,29 @@ Source: &lt;a href="http://www.mikrocontroller.net/attachment/150645/157764-da-0
 <attribute name="NAME" x="161.544" y="147.701" size="1.778" layer="95"/>
 <attribute name="VALUE" x="161.544" y="142.621" size="1.778" layer="96"/>
 </instance>
-<instance part="LED4" gate="G$1" x="175.26" y="55.88" smashed="yes" rot="R270">
-<attribute name="NAME" x="170.688" y="52.324" size="1.778" layer="95"/>
-<attribute name="VALUE" x="170.688" y="50.165" size="1.778" layer="96"/>
-<attribute name="RS" x="175.26" y="55.88" size="1.27" layer="96" rot="R270" display="off"/>
+<instance part="LED4" gate="G$1" x="109.22" y="30.48" smashed="yes" rot="R270">
+<attribute name="NAME" x="104.648" y="26.924" size="1.778" layer="95"/>
+<attribute name="VALUE" x="104.648" y="24.765" size="1.778" layer="96"/>
+<attribute name="RS" x="109.22" y="30.48" size="1.27" layer="96" rot="R270" display="off"/>
 </instance>
-<instance part="LED5" gate="G$1" x="175.26" y="40.64" smashed="yes" rot="R270">
-<attribute name="NAME" x="170.688" y="37.084" size="1.778" layer="95"/>
-<attribute name="VALUE" x="170.688" y="34.925" size="1.778" layer="96"/>
-<attribute name="RS" x="175.26" y="40.64" size="1.27" layer="96" rot="R270" display="off"/>
+<instance part="LED5" gate="G$1" x="109.22" y="20.32" smashed="yes" rot="R270">
+<attribute name="NAME" x="104.648" y="16.764" size="1.778" layer="95"/>
+<attribute name="VALUE" x="104.648" y="14.605" size="1.778" layer="96"/>
+<attribute name="RS" x="109.22" y="20.32" size="1.27" layer="96" rot="R270" display="off"/>
 </instance>
-<instance part="R8" gate="G$1" x="185.42" y="55.88" smashed="yes" rot="R180">
-<attribute name="NAME" x="189.23" y="54.3814" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="189.23" y="59.182" size="1.778" layer="96" rot="R180"/>
+<instance part="R8" gate="G$1" x="119.38" y="30.48" smashed="yes" rot="R180">
+<attribute name="NAME" x="123.19" y="28.9814" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="123.19" y="33.782" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="R9" gate="G$1" x="185.42" y="40.64" smashed="yes" rot="R180">
-<attribute name="NAME" x="189.23" y="39.1414" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="189.23" y="43.942" size="1.778" layer="96" rot="R180"/>
+<instance part="R9" gate="G$1" x="119.38" y="20.32" smashed="yes" rot="R180">
+<attribute name="NAME" x="123.19" y="18.8214" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="123.19" y="23.622" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="SUPPLY55" gate="GND" x="165.1" y="53.34" smashed="yes">
-<attribute name="VALUE" x="163.195" y="50.165" size="1.778" layer="96"/>
+<instance part="SUPPLY55" gate="GND" x="99.06" y="27.94" smashed="yes">
+<attribute name="VALUE" x="97.155" y="24.765" size="1.778" layer="96"/>
 </instance>
-<instance part="SUPPLY56" gate="GND" x="165.1" y="38.1" smashed="yes">
-<attribute name="VALUE" x="163.195" y="34.925" size="1.778" layer="96"/>
+<instance part="SUPPLY56" gate="GND" x="99.06" y="17.78" smashed="yes">
+<attribute name="VALUE" x="97.155" y="14.605" size="1.778" layer="96"/>
 </instance>
 <instance part="EXTRA" gate="A" x="246.38" y="86.36" smashed="yes" rot="R90">
 <attribute name="NAME" x="238.125" y="80.01" size="1.778" layer="95" rot="R90"/>
@@ -18990,6 +18994,9 @@ Source: &lt;a href="http://www.mikrocontroller.net/attachment/150645/157764-da-0
 </instance>
 <instance part="SUPPLY58" gate="G$1" x="243.84" y="73.66" smashed="yes" rot="R180">
 <attribute name="VALUE" x="247.015" y="70.485" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="SUPPLY59" gate="G$1" x="142.24" y="45.72" smashed="yes" rot="R270">
+<attribute name="VALUE" x="145.415" y="48.895" size="1.778" layer="96" rot="R270"/>
 </instance>
 </instances>
 <busses>
@@ -19156,7 +19163,7 @@ Source: &lt;a href="http://www.mikrocontroller.net/attachment/150645/157764-da-0
 <segment>
 <pinref part="S1" gate="G$1" pin="GND"/>
 <pinref part="SUPPLY39" gate="GND" pin="GND"/>
-<wire x1="134.62" y1="12.7" x2="132.08" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="193.04" y1="30.48" x2="190.5" y2="30.48" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="LED1" gate="G$1" pin="GND"/>
@@ -19181,7 +19188,7 @@ Source: &lt;a href="http://www.mikrocontroller.net/attachment/150645/157764-da-0
 <segment>
 <pinref part="C8" gate="G$1" pin="-"/>
 <pinref part="SUPPLY49" gate="GND" pin="GND"/>
-<wire x1="144.78" y1="35.56" x2="142.24" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="203.2" y1="53.34" x2="200.66" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="Q1" gate="G$1" pin="S"/>
@@ -19211,12 +19218,12 @@ Source: &lt;a href="http://www.mikrocontroller.net/attachment/150645/157764-da-0
 <segment>
 <pinref part="LED4" gate="G$1" pin="C"/>
 <pinref part="SUPPLY55" gate="GND" pin="GND"/>
-<wire x1="165.1" y1="55.88" x2="170.18" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="30.48" x2="104.14" y2="30.48" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="LED5" gate="G$1" pin="C"/>
 <pinref part="SUPPLY56" gate="GND" pin="GND"/>
-<wire x1="165.1" y1="40.64" x2="170.18" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="20.32" x2="104.14" y2="20.32" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="EXTRA" gate="A" pin="1"/>
@@ -19262,8 +19269,8 @@ Source: &lt;a href="http://www.mikrocontroller.net/attachment/150645/157764-da-0
 </segment>
 <segment>
 <pinref part="S1" gate="G$1" pin="VDD"/>
-<wire x1="132.08" y1="27.94" x2="134.62" y2="27.94" width="0.1524" layer="91"/>
-<label x="134.62" y="27.94" size="1.27" layer="95" xref="yes"/>
+<wire x1="190.5" y1="45.72" x2="193.04" y2="45.72" width="0.1524" layer="91"/>
+<label x="193.04" y="45.72" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="VIN3V3"/>
@@ -19300,20 +19307,22 @@ Source: &lt;a href="http://www.mikrocontroller.net/attachment/150645/157764-da-0
 <wire x1="246.38" y1="83.82" x2="246.38" y2="78.74" width="0.1524" layer="91"/>
 <label x="246.38" y="78.74" size="1.27" layer="95" rot="R270" xref="yes"/>
 </segment>
+<segment>
+<portref moduleinst="LEVEL_SHIFTER6" port="LV"/>
+<wire x1="101.6" y1="45.72" x2="99.06" y2="45.72" width="0.1524" layer="91"/>
+<label x="99.06" y="45.72" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
 </net>
 <net name="CHOOSE_COLOR" class="0">
 <segment>
 <pinref part="S3" gate="BEF1" pin="P"/>
-<wire x1="226.06" y1="45.72" x2="218.44" y2="45.72" width="0.1524" layer="91"/>
-<label x="215.9" y="45.72" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="226.06" y1="45.72" x2="220.98" y2="45.72" width="0.1524" layer="91"/>
 <pinref part="R4" gate="G$1" pin="2"/>
-<wire x1="218.44" y1="45.72" x2="215.9" y2="45.72" width="0.1524" layer="91"/>
-<wire x1="220.98" y1="55.88" x2="218.44" y2="55.88" width="0.1524" layer="91"/>
-<wire x1="218.44" y1="55.88" x2="218.44" y2="45.72" width="0.1524" layer="91"/>
-<junction x="218.44" y="45.72"/>
+<wire x1="220.98" y1="55.88" x2="220.98" y2="45.72" width="0.1524" layer="91"/>
+<junction x="220.98" y="45.72"/>
 <pinref part="LED3" gate="G$1" pin="C"/>
-<wire x1="220.98" y1="33.02" x2="218.44" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="218.44" y1="33.02" x2="218.44" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="220.98" y1="33.02" x2="220.98" y2="45.72" width="0.1524" layer="91"/>
+<label x="218.44" y="55.88" size="1.27" layer="95" rot="R270" xref="yes"/>
 </segment>
 <segment>
 <pinref part="TEENSY" gate="G$1" pin="8/TX3/PWM"/>
@@ -19438,11 +19447,11 @@ Source: &lt;a href="http://www.mikrocontroller.net/attachment/150645/157764-da-0
 <segment>
 <pinref part="S1" gate="G$1" pin="VMOT"/>
 <pinref part="SUPPLY38" gate="+24V" pin="+24V"/>
-<wire x1="132.08" y1="38.1" x2="132.08" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="190.5" y1="55.88" x2="190.5" y2="53.34" width="0.1524" layer="91"/>
 <pinref part="C8" gate="G$1" pin="+"/>
-<wire x1="132.08" y1="35.56" x2="132.08" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="134.62" y1="35.56" x2="132.08" y2="35.56" width="0.1524" layer="91"/>
-<junction x="132.08" y="35.56"/>
+<wire x1="190.5" y1="53.34" x2="190.5" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="193.04" y1="53.34" x2="190.5" y2="53.34" width="0.1524" layer="91"/>
+<junction x="190.5" y="53.34"/>
 </segment>
 <segment>
 <pinref part="SJ1" gate="G$1" pin="1"/>
@@ -19495,6 +19504,11 @@ Source: &lt;a href="http://www.mikrocontroller.net/attachment/150645/157764-da-0
 <pinref part="EXTRA" gate="A" pin="2"/>
 <pinref part="SUPPLY58" gate="G$1" pin="+5V/1"/>
 <wire x1="243.84" y1="76.2" x2="243.84" y2="83.82" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<portref moduleinst="LEVEL_SHIFTER6" port="HV"/>
+<pinref part="SUPPLY59" gate="G$1" pin="+5V/1"/>
+<wire x1="139.7" y1="45.72" x2="137.16" y2="45.72" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+5V/2" class="2">
@@ -19625,14 +19639,14 @@ Source: &lt;a href="http://www.mikrocontroller.net/attachment/150645/157764-da-0
 </net>
 <net name="VESC_CMD" class="0">
 <segment>
-<pinref part="VESC" gate="A" pin="1"/>
-<wire x1="78.74" y1="124.46" x2="73.66" y2="124.46" width="0.1524" layer="91"/>
-<label x="73.66" y="124.46" size="1.27" layer="95" rot="R180" xref="yes"/>
+<portref moduleinst="LEVEL_SHIFTER6" port="IO_LV"/>
+<wire x1="101.6" y1="40.64" x2="99.06" y2="40.64" width="0.1524" layer="91"/>
+<label x="99.06" y="40.64" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="TEENSY" gate="G$1" pin="17/A3/PWM"/>
-<wire x1="190.5" y1="124.46" x2="187.96" y2="124.46" width="0.1524" layer="91"/>
-<label x="187.96" y="124.46" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="TEENSY" gate="G$1" pin="14/A0/PWM"/>
+<wire x1="190.5" y1="132.08" x2="187.96" y2="132.08" width="0.1524" layer="91"/>
+<label x="187.96" y="132.08" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="JUMPER" class="0">
@@ -19815,39 +19829,39 @@ Source: &lt;a href="http://www.mikrocontroller.net/attachment/150645/157764-da-0
 <segment>
 <pinref part="S1" gate="G$1" pin="2A"/>
 <pinref part="PAS_A_PAS" gate="A" pin="4"/>
-<wire x1="132.08" y1="20.32" x2="152.4" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="190.5" y1="38.1" x2="210.82" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$6" class="2">
 <segment>
 <pinref part="S1" gate="G$1" pin="2B"/>
 <pinref part="PAS_A_PAS" gate="A" pin="5"/>
-<wire x1="132.08" y1="17.78" x2="152.4" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="190.5" y1="35.56" x2="210.82" y2="35.56" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$2" class="2">
 <segment>
 <pinref part="S1" gate="G$1" pin="1B"/>
-<wire x1="132.08" y1="22.86" x2="137.16" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="190.5" y1="40.64" x2="195.58" y2="40.64" width="0.1524" layer="91"/>
 <pinref part="PAS_A_PAS" gate="A" pin="2"/>
-<wire x1="137.16" y1="22.86" x2="139.7" y2="25.4" width="0.1524" layer="91"/>
-<wire x1="139.7" y1="25.4" x2="152.4" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="195.58" y1="40.64" x2="198.12" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="198.12" y1="43.18" x2="210.82" y2="43.18" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$3" class="2">
 <segment>
 <pinref part="S1" gate="G$1" pin="1A"/>
-<wire x1="132.08" y1="25.4" x2="137.16" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="190.5" y1="43.18" x2="195.58" y2="43.18" width="0.1524" layer="91"/>
 <pinref part="PAS_A_PAS" gate="A" pin="3"/>
-<wire x1="137.16" y1="25.4" x2="139.7" y2="22.86" width="0.1524" layer="91"/>
-<wire x1="139.7" y1="22.86" x2="152.4" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="195.58" y1="43.18" x2="198.12" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="198.12" y1="40.64" x2="210.82" y2="40.64" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="STEP" class="0">
 <segment>
 <pinref part="S1" gate="G$1" pin="STEP"/>
-<wire x1="106.68" y1="15.24" x2="104.14" y2="15.24" width="0.1524" layer="91"/>
-<label x="104.14" y="15.24" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="165.1" y1="33.02" x2="162.56" y2="33.02" width="0.1524" layer="91"/>
+<label x="162.56" y="33.02" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="TEENSY" gate="G$1" pin="30/PWM"/>
@@ -19858,8 +19872,8 @@ Source: &lt;a href="http://www.mikrocontroller.net/attachment/150645/157764-da-0
 <net name="DIR" class="0">
 <segment>
 <pinref part="S1" gate="G$1" pin="DIR"/>
-<wire x1="106.68" y1="12.7" x2="104.14" y2="12.7" width="0.1524" layer="91"/>
-<label x="104.14" y="12.7" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="165.1" y1="30.48" x2="162.56" y2="30.48" width="0.1524" layer="91"/>
+<label x="162.56" y="30.48" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="TEENSY" gate="G$1" pin="29/PWM"/>
@@ -19940,8 +19954,8 @@ Source: &lt;a href="http://www.mikrocontroller.net/attachment/150645/157764-da-0
 <net name="S_N_SLEEP" class="0">
 <segment>
 <pinref part="S1" gate="G$1" pin="N_SLEEP"/>
-<wire x1="106.68" y1="17.78" x2="104.14" y2="17.78" width="0.1524" layer="91"/>
-<label x="104.14" y="17.78" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="165.1" y1="35.56" x2="162.56" y2="35.56" width="0.1524" layer="91"/>
+<label x="162.56" y="35.56" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="TEENSY" gate="G$1" pin="31/A12/RX4"/>
@@ -19952,8 +19966,8 @@ Source: &lt;a href="http://www.mikrocontroller.net/attachment/150645/157764-da-0
 <net name="S_N_RST" class="0">
 <segment>
 <pinref part="S1" gate="G$1" pin="N_RESET"/>
-<wire x1="106.68" y1="20.32" x2="104.14" y2="20.32" width="0.1524" layer="91"/>
-<label x="104.14" y="20.32" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="165.1" y1="38.1" x2="162.56" y2="38.1" width="0.1524" layer="91"/>
+<label x="162.56" y="38.1" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="TEENSY" gate="G$1" pin="32/A13/TX4/SCK1"/>
@@ -19964,8 +19978,8 @@ Source: &lt;a href="http://www.mikrocontroller.net/attachment/150645/157764-da-0
 <net name="S_MS3" class="0">
 <segment>
 <pinref part="S1" gate="G$1" pin="MS3"/>
-<wire x1="106.68" y1="22.86" x2="104.14" y2="22.86" width="0.1524" layer="91"/>
-<label x="104.14" y="22.86" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="165.1" y1="40.64" x2="162.56" y2="40.64" width="0.1524" layer="91"/>
+<label x="162.56" y="40.64" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="TEENSY" gate="G$1" pin="26"/>
@@ -19976,8 +19990,8 @@ Source: &lt;a href="http://www.mikrocontroller.net/attachment/150645/157764-da-0
 <net name="S_MS2" class="0">
 <segment>
 <pinref part="S1" gate="G$1" pin="MS2"/>
-<wire x1="106.68" y1="25.4" x2="104.14" y2="25.4" width="0.1524" layer="91"/>
-<label x="104.14" y="25.4" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="165.1" y1="43.18" x2="162.56" y2="43.18" width="0.1524" layer="91"/>
+<label x="162.56" y="43.18" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="TEENSY" gate="G$1" pin="27"/>
@@ -19988,8 +20002,8 @@ Source: &lt;a href="http://www.mikrocontroller.net/attachment/150645/157764-da-0
 <net name="S_MS1" class="0">
 <segment>
 <pinref part="S1" gate="G$1" pin="MS1"/>
-<wire x1="106.68" y1="27.94" x2="104.14" y2="27.94" width="0.1524" layer="91"/>
-<label x="104.14" y="27.94" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="165.1" y1="45.72" x2="162.56" y2="45.72" width="0.1524" layer="91"/>
+<label x="162.56" y="45.72" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="TEENSY" gate="G$1" pin="28"/>
@@ -19999,14 +20013,14 @@ Source: &lt;a href="http://www.mikrocontroller.net/attachment/150645/157764-da-0
 </net>
 <net name="CMD_FUM_RES" class="0">
 <segment>
-<pinref part="TEENSY" gate="G$1" pin="14/A0/PWM"/>
-<wire x1="190.5" y1="132.08" x2="187.96" y2="132.08" width="0.1524" layer="91"/>
-<label x="187.96" y="132.08" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
 <pinref part="R7" gate="G$1" pin="1"/>
 <wire x1="114.3" y1="109.22" x2="111.76" y2="109.22" width="0.1524" layer="91"/>
 <label x="111.76" y="109.22" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="TEENSY" gate="G$1" pin="17/A3/PWM"/>
+<wire x1="190.5" y1="124.46" x2="187.96" y2="124.46" width="0.1524" layer="91"/>
+<label x="187.96" y="124.46" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="CMD_DEL_AR" class="0">
@@ -20155,8 +20169,8 @@ Source: &lt;a href="http://www.mikrocontroller.net/attachment/150645/157764-da-0
 </segment>
 <segment>
 <pinref part="R8" gate="G$1" pin="1"/>
-<wire x1="190.5" y1="55.88" x2="193.04" y2="55.88" width="0.1524" layer="91"/>
-<label x="193.04" y="55.88" size="1.27" layer="95" xref="yes"/>
+<wire x1="124.46" y1="30.48" x2="127" y2="30.48" width="0.1524" layer="91"/>
+<label x="127" y="30.48" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="DEL_WARNING" class="0">
@@ -20167,8 +20181,8 @@ Source: &lt;a href="http://www.mikrocontroller.net/attachment/150645/157764-da-0
 </segment>
 <segment>
 <pinref part="R9" gate="G$1" pin="1"/>
-<wire x1="190.5" y1="40.64" x2="193.04" y2="40.64" width="0.1524" layer="91"/>
-<label x="193.04" y="40.64" size="1.27" layer="95" xref="yes"/>
+<wire x1="124.46" y1="20.32" x2="127" y2="20.32" width="0.1524" layer="91"/>
+<label x="127" y="20.32" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="EXTRA_GPIO_1" class="0">
@@ -20199,14 +20213,26 @@ Source: &lt;a href="http://www.mikrocontroller.net/attachment/150645/157764-da-0
 <segment>
 <pinref part="LED4" gate="G$1" pin="A"/>
 <pinref part="R8" gate="G$1" pin="2"/>
-<wire x1="180.34" y1="55.88" x2="177.8" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="30.48" x2="111.76" y2="30.48" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$11" class="0">
 <segment>
 <pinref part="LED5" gate="G$1" pin="A"/>
 <pinref part="R9" gate="G$1" pin="2"/>
-<wire x1="180.34" y1="40.64" x2="177.8" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="20.32" x2="111.76" y2="20.32" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="VESC_CMD_5V" class="0">
+<segment>
+<portref moduleinst="LEVEL_SHIFTER6" port="IO_HV"/>
+<wire x1="137.16" y1="40.64" x2="139.7" y2="40.64" width="0.1524" layer="91"/>
+<label x="139.7" y="40.64" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="VESC" gate="A" pin="1"/>
+<wire x1="78.74" y1="124.46" x2="73.66" y2="124.46" width="0.1524" layer="91"/>
+<label x="73.66" y="124.46" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 </nets>
@@ -20221,7 +20247,7 @@ Source: &lt;a href="http://www.mikrocontroller.net/attachment/150645/157764-da-0
 <approved hash="104,1,149.86,144.78,AX12_AR,DYN_VCC,+12V,,,"/>
 <approved hash="104,1,162.56,119.38,FUMIGENE,DYN_VCC,+5V/3,,,"/>
 <approved hash="104,1,162.56,124.46,FUMIGENE,GND,FUM_POMPE,,,"/>
-<approved hash="113,1,149.407,23.2131,PAS_A_PAS,,,,,"/>
+<approved hash="113,1,207.827,40.9931,PAS_A_PAS,,,,,"/>
 <approved hash="113,1,78.9771,123.416,VESC,,,,,"/>
 <approved hash="113,1,46.6569,58.42,SJ1,,,,,"/>
 <approved hash="113,1,249.157,103.096,USB,,,,,"/>

@@ -2570,6 +2570,19 @@ Covered vias can be set in Masks (Limit).
 <attribute name="NAME" x="116.8288" y="65.4262" size="1.27" layer="25" ratio="10" rot="R270"/>
 <attribute name="VALUE" x="111.825" y="65.35" size="1.27" layer="27" rot="R270"/>
 </element>
+<element name="LEVEL_SHIFTER6:Q1" library="transistor-small-signal" library_urn="urn:adsk.eagle:library:401" package="SOT23" package3d_urn="urn:adsk.eagle:package:28738/2" value="BSS138" x="91" y="23" smashed="yes" rot="R90">
+<attribute name="NAME" x="89.095" y="21.095" size="1.27" layer="25" rot="R90"/>
+<attribute name="RS" value="669-7559" x="91" y="23" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" x="94.175" y="21.095" size="1.27" layer="27" rot="R90"/>
+</element>
+<element name="LEVEL_SHIFTER6:R1" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="10k" x="94" y="23" smashed="yes" rot="R90">
+<attribute name="NAME" x="92.73" y="22.365" size="1.27" layer="25" rot="R90"/>
+<attribute name="VALUE" x="96.54" y="22.365" size="1.27" layer="27" rot="R90"/>
+</element>
+<element name="LEVEL_SHIFTER6:R2" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="10k" x="88" y="23" smashed="yes" rot="R270">
+<attribute name="NAME" x="89.27" y="23.635" size="1.27" layer="25" rot="R270"/>
+<attribute name="VALUE" x="85.46" y="23.635" size="1.27" layer="27" rot="R270"/>
+</element>
 </elements>
 <signals>
 <signal name="GND">
@@ -2783,7 +2796,8 @@ Covered vias can be set in Masks (Limit).
 <via x="88.8" y="4.2" extent="1-16" drill="0.4"/>
 <wire x1="88.8" y1="4.2" x2="88.4" y2="3.8" width="0.3" layer="1"/>
 <wire x1="82" y1="3" x2="82" y2="2.5" width="0.3" layer="1"/>
-<wire x1="99.8" y1="8.6" x2="93.4" y2="8.6" width="0.3" layer="16"/>
+<wire x1="99.8" y1="8.6" x2="94.8" y2="8.6" width="0.3" layer="16"/>
+<wire x1="94.8" y1="8.6" x2="93.4" y2="8.6" width="0.3" layer="16"/>
 <wire x1="93.4" y1="8.6" x2="89" y2="4.2" width="0.3" layer="16"/>
 <wire x1="88.4" y1="3.8" x2="82.8" y2="3.8" width="0.3" layer="1"/>
 <wire x1="82.8" y1="3.8" x2="82" y2="3" width="0.3" layer="1"/>
@@ -2795,6 +2809,12 @@ Covered vias can be set in Masks (Limit).
 <wire x1="113.2" y1="48.04968125" x2="113.0574" y2="48.19228125" width="0.3" layer="1"/>
 <wire x1="113.0574" y1="48.19228125" x2="113.0574" y2="57.0574" width="0.3" layer="1"/>
 <wire x1="113.0574" y1="57.0574" x2="115" y2="59" width="0.3" layer="1"/>
+<contactref element="LEVEL_SHIFTER6:Q1" pad="1"/>
+<contactref element="LEVEL_SHIFTER6:R1" pad="1"/>
+<wire x1="92.1" y1="22.05" x2="94" y2="22.05" width="0.3" layer="1"/>
+<wire x1="94" y1="22.05" x2="94.8" y2="21.25" width="0.3" layer="1"/>
+<wire x1="94.8" y1="21.25" x2="94.8" y2="8.6" width="0.3" layer="1"/>
+<via x="94.8" y="8.6" extent="1-16" drill="0.35"/>
 </signal>
 <signal name="CHOOSE_COLOR">
 <contactref element="S3" pad="2"/>
@@ -2973,7 +2993,8 @@ Covered vias can be set in Masks (Limit).
 <wire x1="100.2" y1="4" x2="97.9770875" y2="4" width="0.3" layer="1"/>
 <wire x1="97.7770875" y1="4.2" x2="97.9770875" y2="4" width="0.3" layer="1"/>
 <wire x1="97.7770875" y1="4.2" x2="96.4729125" y2="4.2" width="0.3" layer="1"/>
-<wire x1="94.114225" y1="4.1" x2="76.7" y2="21.514225" width="0.3" layer="1"/>
+<wire x1="94.114225" y1="4.1" x2="79.5071125" y2="18.7071125" width="0.3" layer="1"/>
+<wire x1="79.5071125" y1="18.7071125" x2="76.7" y2="21.514225" width="0.3" layer="1"/>
 <wire x1="96.3729125" y1="4.1" x2="94.114225" y2="4.1" width="0.3" layer="1"/>
 <wire x1="76.7" y1="21.514225" x2="76.7" y2="30.8428875" width="0.3" layer="1"/>
 <wire x1="78.2045125" y1="32.3474" x2="78.95771875" y2="32.3474" width="0.3" layer="1"/>
@@ -3002,6 +3023,9 @@ Covered vias can be set in Masks (Limit).
 <wire x1="118.8" y1="49.71031875" x2="118.8" y2="57.74" width="0.3" layer="16"/>
 <wire x1="118.8" y1="47.52968125" x2="118.1374" y2="48.19228125" width="0.3" layer="16"/>
 <wire x1="118.1374" y1="49.04771875" x2="118.8" y2="49.71031875" width="0.3" layer="16"/>
+<contactref element="LEVEL_SHIFTER6:R2" pad="1"/>
+<wire x1="88" y1="23.95" x2="84.75" y2="23.95" width="0.3" layer="1"/>
+<wire x1="84.75" y1="23.95" x2="79.5071125" y2="18.7071125" width="0.3" layer="1"/>
 </signal>
 <signal name="+5V/2" class="2">
 <contactref element="DC2" pad="3"/>
@@ -3122,13 +3146,13 @@ Covered vias can be set in Masks (Limit).
 <wire x1="75.7" y1="21.1" x2="75.7" y2="33.09" width="0.3" layer="1"/>
 </signal>
 <signal name="VESC_CMD">
-<contactref element="VESC" pad="1"/>
-<contactref element="TEENSY" pad="17/A3"/>
-<wire x1="98.85" y1="33.38" x2="98.85" y2="25.05" width="0.3" layer="1"/>
-<wire x1="98.85" y1="25.05" x2="98.4" y2="24.6" width="0.3" layer="1"/>
-<via x="98.4" y="24.6" extent="1-16" drill="0.4"/>
-<wire x1="98.4" y1="24.6" x2="92.61" y2="18.81" width="0.3" layer="16"/>
-<wire x1="92.61" y1="18.81" x2="92.54" y2="18.81" width="0.3" layer="16"/>
+<contactref element="LEVEL_SHIFTER6:R1" pad="2"/>
+<contactref element="LEVEL_SHIFTER6:Q1" pad="2"/>
+<wire x1="92.1" y1="23.95" x2="92.2" y2="24.05" width="0.3" layer="1"/>
+<wire x1="92.1" y1="23.95" x2="94" y2="23.95" width="0.3" layer="1"/>
+<contactref element="TEENSY" pad="14/A0"/>
+<wire x1="92.2" y1="32.41" x2="91.23" y2="33.38" width="0.3" layer="1"/>
+<wire x1="92.2" y1="24.05" x2="92.2" y2="32.41" width="0.3" layer="1"/>
 </signal>
 <signal name="JUMPER">
 <contactref element="JUMPER" pad="3"/>
@@ -3534,10 +3558,10 @@ Covered vias can be set in Masks (Limit).
 <wire x1="57.3" y1="48.3" x2="56.35" y2="47.35" width="0.3" layer="16"/>
 </signal>
 <signal name="CMD_FUM_RES">
-<contactref element="TEENSY" pad="14/A0"/>
 <contactref element="R7" pad="1"/>
-<wire x1="96.05" y1="23" x2="96.05" y2="28.56" width="0.3" layer="1"/>
-<wire x1="96.05" y1="28.56" x2="91.23" y2="33.38" width="0.3" layer="1"/>
+<contactref element="TEENSY" pad="17/A3"/>
+<wire x1="96.05" y1="30.58" x2="98.85" y2="33.38" width="0.3" layer="1"/>
+<wire x1="96.05" y1="23" x2="96.05" y2="30.58" width="0.3" layer="1"/>
 </signal>
 <signal name="CMD_DEL_AR">
 <contactref element="TEENSY" pad="6"/>
@@ -3711,6 +3735,15 @@ Covered vias can be set in Masks (Limit).
 <contactref element="R9" pad="2"/>
 <wire x1="102.27" y1="58" x2="105.05" y2="58" width="0.3" layer="1"/>
 </signal>
+<signal name="VESC_CMD_5V">
+<contactref element="LEVEL_SHIFTER6:Q1" pad="3"/>
+<contactref element="LEVEL_SHIFTER6:R2" pad="2"/>
+<contactref element="VESC" pad="1"/>
+<wire x1="88" y1="22.05" x2="88.95" y2="22.05" width="0.3" layer="1"/>
+<wire x1="88.95" y1="22.05" x2="89.9" y2="23" width="0.3" layer="1"/>
+<wire x1="92.54" y1="18.81" x2="89.3" y2="22.05" width="0.3" layer="1"/>
+<wire x1="89.3" y1="22.05" x2="88" y2="22.05" width="0.3" layer="1"/>
+</signal>
 </signals>
 <mfgpreviewcolors>
 <mfgpreviewcolor name="soldermaskcolor" color="0xC8008000"/>
@@ -3751,6 +3784,12 @@ Covered vias can be set in Masks (Limit).
 <approved hash="23,1,cbc048004e43cd83"/>
 <approved hash="19,1,f213e1e594a73d16"/>
 <approved hash="19,1,f558a2c188700648"/>
+<approved hash="7,39,e5275511d6981423"/>
+<approved hash="7,39,1bb50ff9afadc31d"/>
+<approved hash="7,39,9bb5115f31125dbb"/>
+<approved hash="7,39,9ef25ff3a09819fd"/>
+<approved hash="7,39,85db8f38af7cddbb"/>
+<approved hash="7,39,9b9f8f28af7cc3c7"/>
 </errors>
 </board>
 </drawing>
