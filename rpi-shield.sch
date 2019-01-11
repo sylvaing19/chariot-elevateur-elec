@@ -18651,7 +18651,7 @@ Solder type</description>
 <wire x1="111.76" y1="43.18" x2="109.22" y2="43.18" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="+5V" class="2">
+<net name="+5V" class="0">
 <segment>
 <pinref part="SV1" gate="G$1" pin="2"/>
 <pinref part="SUPPLY5" gate="+5V" pin="+5V"/>
