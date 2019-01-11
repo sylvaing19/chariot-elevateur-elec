@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.5" altunitdist="mm" altunit="mm"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
@@ -172,10 +172,37 @@
 <wire x1="65" y1="53" x2="62" y2="56" width="0" layer="20" curve="90"/>
 <wire x1="62" y1="56" x2="3" y2="56" width="0" layer="20"/>
 <wire x1="3" y1="56" x2="0" y2="53" width="0" layer="20" curve="90"/>
-<hole x="3.5" y="3.5" drill="2.75"/>
-<hole x="61.5" y="3.5" drill="2.75"/>
-<hole x="3.5" y="52.5" drill="2.75"/>
-<hole x="61.5" y="52.5" drill="2.75"/>
+<text x="16" y="41" size="1.778" layer="21" rot="SR270">AUX</text>
+<text x="16" y="25" size="1.778" layer="21" rot="SR270">RPI</text>
+<text x="29.8" y="4.2" size="1.27" layer="21">UART [TX|RX]</text>
+<text x="44.4" y="4.2" size="1.27" layer="21">I2C [SDA|SCL]</text>
+<text x="38.1" y="9.5" size="1.27" layer="21">SPI</text>
+<text x="43.7" y="9.4" size="1.27" layer="21" rot="R90">MOSI</text>
+<text x="46.3" y="9.4" size="1.27" layer="21" rot="R90">MISO</text>
+<text x="48.9" y="9.4" size="1.27" layer="21" rot="R90">SCLK</text>
+<text x="51.4" y="9.4" size="1.27" layer="21" rot="R90">CE0</text>
+<text x="54" y="9.4" size="1.27" layer="21" rot="R90">CE1</text>
+<text x="26.2" y="8.4" size="1.27" layer="21">PWM</text>
+<text x="60.4" y="21.2" size="1.778" layer="21" rot="R180">RPI 5V</text>
+<text x="58.5" y="27.5" size="1.778" layer="21" rot="R270">GND</text>
+<text x="58.5" y="32.3" size="1.778" layer="21" rot="R270">VIN</text>
+<text x="58.5" y="44" size="1.778" layer="21" rot="R270">GND</text>
+<text x="58.5" y="49" size="1.778" layer="21" rot="R270">VIN</text>
+<text x="60.6" y="37.8" size="1.778" layer="21" rot="R180">AUX 5V</text>
+<wire x1="64" y1="44.4" x2="58" y2="44.4" width="0.1524" layer="21"/>
+<wire x1="58" y1="44.4" x2="58" y2="38.1" width="0.1524" layer="21"/>
+<wire x1="58" y1="38.1" x2="64" y2="38.1" width="0.1524" layer="21"/>
+<wire x1="64" y1="38.1" x2="64" y2="44.4" width="0.1524" layer="21"/>
+<wire x1="64" y1="27.9" x2="58" y2="27.9" width="0.1524" layer="21"/>
+<wire x1="58" y1="27.9" x2="58" y2="21.6" width="0.1524" layer="21"/>
+<wire x1="58" y1="21.6" x2="64" y2="21.6" width="0.1524" layer="21"/>
+<wire x1="64" y1="21.6" x2="64" y2="27.9" width="0.1524" layer="21"/>
+<rectangle x1="60.8" y1="38.1" x2="64" y2="44.4" layer="21"/>
+<rectangle x1="60.7" y1="21.6" x2="64" y2="27.9" layer="21"/>
+<rectangle x1="33" y1="0.2" x2="35.5" y2="4" layer="21"/>
+<rectangle x1="47" y1="0.2" x2="49.5" y2="4" layer="21"/>
+<rectangle x1="39.4" y1="5.6" x2="41.9" y2="9.1" layer="21"/>
+<text x="57" y="50" size="1.778" layer="21" rot="R180">© 2019 - GobGob Senpaï</text>
 </plain>
 <libraries>
 <library name="pinhead" urn="urn:adsk.eagle:library:325">
@@ -2115,8 +2142,7 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="44.45" y="-0.635" size="1.27" layer="27"/>
 </element>
 <element name="LIDAR" library="bt_con-jst-xh" package="B5B-XH" value="05-JST-B5B-XH-A" x="20.32" y="2.54" smashed="yes">
-<attribute name="NAME" x="15.24" y="6.35" size="1.27" layer="21"/>
-<attribute name="VALUE" x="15.24" y="-1.27" size="1.27" layer="21"/>
+<attribute name="NAME" x="20.24" y="6.35" size="1.27" layer="21"/>
 </element>
 <element name="SPI" library="pinhead" library_urn="urn:adsk.eagle:library:325" package="1X07" package3d_urn="urn:adsk.eagle:package:22477/2" value="" x="45.72" y="7.62" smashed="yes">
 <attribute name="NAME" x="36.7538" y="9.4488" size="1.27" layer="25" ratio="10"/>
@@ -2312,6 +2338,14 @@ design rules under a new name.</description>
 <vertex x="65" y="0"/>
 <vertex x="0" y="0"/>
 </polygon>
+<via x="25" y="13" extent="1-16" drill="0.35"/>
+<via x="30" y="13" extent="1-16" drill="0.35"/>
+<via x="30" y="16" extent="1-16" drill="0.35"/>
+<via x="25" y="16" extent="1-16" drill="0.35"/>
+<via x="3.5" y="52.5" extent="1-16" drill="2.75" diameter="5" shape="octagon"/>
+<via x="61.5" y="52.5" extent="1-16" drill="2.75" diameter="5" shape="octagon"/>
+<via x="61.5" y="3.5" extent="1-16" drill="2.75" diameter="5" shape="octagon"/>
+<via x="3.5" y="3.5" extent="1-16" drill="2.75" diameter="5" shape="octagon"/>
 </signal>
 <signal name="+3V3">
 <contactref element="SV1" pad="1"/>
@@ -2395,15 +2429,15 @@ design rules under a new name.</description>
 <wire x1="37.178" y1="24.6" x2="34" y2="27.778" width="0.8" layer="1"/>
 <wire x1="57" y1="24.6" x2="37.178" y2="24.6" width="0.8" layer="1"/>
 <wire x1="25" y1="27.54" x2="19.54" y2="33" width="0.8" layer="16"/>
-<wire x1="6.4" y1="51.8" x2="8.37" y2="53.77" width="0.8" layer="16"/>
 <wire x1="17.2" y1="33" x2="9.6" y2="33" width="0.8" layer="16"/>
-<wire x1="9.6" y1="33" x2="6.4" y2="36.2" width="0.8" layer="16"/>
-<wire x1="6.4" y1="36.2" x2="6.4" y2="51.8" width="0.8" layer="16"/>
 <wire x1="8.37" y1="53.77" x2="10.91" y2="53.77" width="0.8" layer="16"/>
 <wire x1="19.54" y1="33" x2="17.2" y2="33" width="0.8" layer="16"/>
 <via x="17.2" y="33" extent="1-16" drill="0.4"/>
 <wire x1="17" y1="28.45" x2="17.2" y2="28.65" width="0.3" layer="1"/>
 <wire x1="17.2" y1="28.65" x2="17.2" y2="33" width="0.3" layer="1"/>
+<wire x1="9.6" y1="33" x2="7" y2="35.6" width="0.8" layer="16"/>
+<wire x1="7" y1="52.4" x2="8.37" y2="53.77" width="0.8" layer="16"/>
+<wire x1="7" y1="35.6" x2="7" y2="52.4" width="0.8" layer="16"/>
 </signal>
 <signal name="TX">
 <contactref element="SV1" pad="8"/>
