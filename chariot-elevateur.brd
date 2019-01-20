@@ -3,7 +3,7 @@
 <eagle version="9.2.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
@@ -163,7 +163,7 @@
 <layer number="255" name="Accent" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
 <board>
-<fusionsync huburn="a.cGVyc29uYWw6dWUyYjVjZTIy" projecturn="a.cGVyc29uYWw6dWUyYjVjZTIyIzIwMTgwOTIxMTUwMjQwNTAx" f3durn="urn:adsk.wipprod:dm.lineage:GSJ6iZW7T-ifCIeOwvPvjQ" pcbguid="b42dcfff-eba5-4b7b-b8d8-54aa01b8e055" lastpulledtime="" lastsyncedchangeguid="565a2cd7-a5a5-da67-9f42-62d92f887205"/>
+<fusionsync huburn="a.cGVyc29uYWw6dWUyYjVjZTIy" projecturn="a.cGVyc29uYWw6dWUyYjVjZTIyIzIwMTgwOTIxMTUwMjQwNTAx" f3durn="urn:adsk.wipprod:dm.lineage:GSJ6iZW7T-ifCIeOwvPvjQ" pcbguid="b42dcfff-eba5-4b7b-b8d8-54aa01b8e055" lastpulledtime="" lastsyncedchangeguid="06569390-d119-2735-0d2d-03d4c5975918"/>
 <plain>
 <wire x1="17.5" y1="0" x2="51.5" y2="0" width="0" layer="20"/>
 <wire x1="71.5" y1="0" x2="105.5" y2="0" width="0" layer="20"/>
